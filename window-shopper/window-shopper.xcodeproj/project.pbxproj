@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		60A635EA20B95EEB00FFCA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A635E920B95EEB00FFCA21 /* AppDelegate.swift */; };
-		60A635EC20B95EEB00FFCA21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A635EB20B95EEB00FFCA21 /* ViewController.swift */; };
+		60A635EC20B95EEB00FFCA21 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A635EB20B95EEB00FFCA21 /* MainVC.swift */; };
 		60A635EF20B95EEB00FFCA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A635ED20B95EEB00FFCA21 /* Main.storyboard */; };
 		60A635F120B95EEB00FFCA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A635F020B95EEB00FFCA21 /* Assets.xcassets */; };
 		60A635F420B95EEB00FFCA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A635F220B95EEB00FFCA21 /* LaunchScreen.storyboard */; };
+		60A635FE20B9637800FFCA21 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A635FD20B9637800FFCA21 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60A635E620B95EEA00FFCA21 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A635E920B95EEB00FFCA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60A635EB20B95EEB00FFCA21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60A635EB20B95EEB00FFCA21 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		60A635EE20B95EEB00FFCA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60A635F020B95EEB00FFCA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60A635F320B95EEB00FFCA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60A635F520B95EEB00FFCA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A635FD20B9637800FFCA21 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		60A635E820B95EEA00FFCA21 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				60A635FC20B9634A00FFCA21 /* Views */,
+				60A635FB20B9619F00FFCA21 /* Controller */,
 				60A635E920B95EEB00FFCA21 /* AppDelegate.swift */,
-				60A635EB20B95EEB00FFCA21 /* ViewController.swift */,
 				60A635ED20B95EEB00FFCA21 /* Main.storyboard */,
 				60A635F020B95EEB00FFCA21 /* Assets.xcassets */,
 				60A635F220B95EEB00FFCA21 /* LaunchScreen.storyboard */,
 				60A635F520B95EEB00FFCA21 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		60A635FB20B9619F00FFCA21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60A635EB20B95EEB00FFCA21 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		60A635FC20B9634A00FFCA21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60A635FD20B9637800FFCA21 /* CurrencyTxtField.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A635EC20B95EEB00FFCA21 /* ViewController.swift in Sources */,
+				60A635FE20B9637800FFCA21 /* CurrencyTxtField.swift in Sources */,
+				60A635EC20B95EEB00FFCA21 /* MainVC.swift in Sources */,
 				60A635EA20B95EEB00FFCA21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
